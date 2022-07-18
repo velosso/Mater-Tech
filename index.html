@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"> 
+                    <img src="images/logo/logo.svg" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Acceuil</a></li>
+                        <li><a href="produit.html">Produit</a></li>
+                        <li><a href="">Compte</a></li>
+                    </ul>
+                </nav>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+                <i class="fa-solid fa-bars menu-icon" onclick="menutoggle()"></i>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1> Biencvenue chez  <br> {Nom de l'entreprise}</h1>
+                    <p>{slogan de la boutique }</p>
+                    <a href="" class="btn"> Voir la Boutique &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/blog-2.jpg">
+                    
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <!------------------------------------------ COLLECTION RECENTE ------------------------------>
+
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/produit/product-3.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/produit/product-5.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/produit/product-6.jpg">
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <!------------------------------------------ PRODUIT RECENT ------------------------------>
+
+        <div class="small-container">
+            <h2 class="title"> Nouveaux Produits</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/produit/product-8.jpg">
+                    <h4> mac-book Air</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-of-david"></i>
+                    </div>
+                    <p>500.000 FCFA</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/produit/product-7.jpg">
+                    <h4> mac-book Air</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-of-david"></i>
+                    </div>
+                    <p>500.000 FCFA</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/produit/product-2.jpg">
+                    <h4> mac-book Air</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-of-david"></i>
+                    </div>
+                    <p>500.000 FCFA</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/produit/product-6.jpg">
+                    <h4> mac-book Air</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-of-david"></i>
+                    </div>
+                    <p>500.000 FCFA</p>
+                </div>
+            </div>
+            <h2 class="title"> Quelques Produits</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/produit/product-5.jpg">
+                    <h4> mac-book Air</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-of-david"></i>
+                    </div>
+                    <p>500.000 FCFA</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/produit/product-4.jpg">
+                    <h4> mac-book Air</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-of-david"></i>
+                    </div>
+                    <p>500.000 FCFA</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/produit/product-3.jpg">
+                    <h4> mac-book Air</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-of-david"></i>
+                    </div>
+                    <p>500.000 FCFA</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/produit/product-1.jpg">
+                    <h4> mac-book Air</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-of-david"></i>
+                    </div>
+                    <p>500.000 FCFA</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/produit/product-1.jpg">
+                    <h4> mac-book Air</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-of-david"></i>
+                    </div>
+                    <p>500.000 FCFA</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/produit/product-1.jpg">
+                    <h4> mac-book Air</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-of-david"></i>
+                    </div>
+                    <p>500.000 FCFA</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/produit/product-1.jpg">
+                    <h4> mac-book Air</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-of-david"></i>
+                    </div>
+                    <p>500.000 FCFA</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/produit/product-1.jpg">
+                    <h4> mac-book Air</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-of-david"></i>
+                    </div>
+                    <p>500.000 FCFA</p>
+                </div>
+            </div>
+        
+        </div>
+
+    <!------------------------------------------------ FOOTER ------------------------------------------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Mercie d'avoir visite {Nom de l'entreprise} </h3>
+                        <p>  </p>
+                    </div>
+
+                    <div class="footer-col-2">
+                        <img src="images/logo/logo.svg">
+                        <p> {slogan de l'entreprise}</p>
+                    </div>
+
+                    <div class="footer-col-3">
+                        <h3>Info Sur l'Entreprise</h3>
+                        <ul>
+                            <li>Email: franklindjoumessi576@gmail.com</li>
+                            <li>Tel: +237 691714046</li>
+                            <li></li>
+                            <li></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="footer-col-4">
+                        <h3>Mode de payement</h3>
+                        <ul>
+                            <li>A la Livraison</li>
+                            <li>Visa</li>
+                            <li>MTN Money</li>
+                            <li>Orange money</li>
+                        </ul>
+                    </div>
+            </div>
+            <hr>
+            <p class="copyright">@ copyright 2022</p>
+        </div>
+    </div> 
+    <!------------------------ js for toggle menu ------------------------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>   
+
+    
+</body>
+</html>
