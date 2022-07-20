@@ -20,11 +20,11 @@
                     <ul id="MenuItems">
                         <li><a href="index.html">Acceuil</a></li>
                         <li><a href="produit.html">Produit</a></li>
-                        <li><a href="">Compte</a></li>
+                        <li><a href="Compte.html">Compte</a></li>
                     </ul>
                 </nav>
-                <i class="fa-solid fa-cart-arrow-down"></i>
-                <i class="fa-solid fa-bars menu-icon" onclick="menutoggle()"></i>
+                <a href="Panier.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                <i class="fa-solid fa-bars" id="menu-icon" onclick="menutoggle()"></i>
             </div>
             
         </div>  
@@ -32,16 +32,49 @@
     <!------------------------------------------ LISTE DE TOUS LES PRODUITS  ------------------------------>
 
         <div class="small-container">
+            <form  class="forme">
+                <div class="select">
+                    <select name="format" id="format" class="collection">
+                        <option selected disabled> Collection </option>
+                        <option> Telephone </option>
+                        <option> Casque </option>
+                        <option> Ouffer </option>
+                        <option> Montre</option>
+                        <option> Telephone </option>
+                        <option> Casque </option>
+                        <option> Ouffer </option>
+                        <option> Montre</option>
+                        <option> Telephone </option>
+                        <option> Casque </option>
+                        <option> Ouffer </option>
+                        <option> Montre</option>
+                        <option> Telephone </option>
+                        <option> Casque </option>
+                        <option> Ouffer </option>
+                        <option> Montre</option>
+                        <option> Telephone </option>
+                        <option> Casque </option>
+                        <option> Ouffer </option>
+                        <option> Montre</option>
+                    </select>
+                </div>
+                <form>
+                    <input class="input" id="I1" type="text" placeholder="rechercher d'une collection"  style="padding: 8px; margin-left: 25%">
+                    <button type="submit" > <i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                
+            </form>
             
             <div class="row row-2">
                 <h2>Tous les produits</h2>
-                <select>
-                    <option>Telephone</option>
-                    <option>Machine </option>
-                    <option>Baffle</option>
-                    <option>Appareil Electromenage</option>
-                    <option>Tablette</option>
-                </select>
+                <form>
+                    <input class="input" type="text" placeholder="rechercher un produit"  style="padding: 8px;">
+                    <button type="submit" > <i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                
+                
+                
+                
             </div>
             <div class="row">
                 <div class="col-4">

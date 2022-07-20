@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tous les Produits </title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo/logo.svg" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Acceuil</a></li>
+                        <li><a href="produit.html">Produit</a></li>
+                        <li><a href="Compte.html">Compte</a></li>
+                    </ul>
+                </nav>
+                <a href="Panier.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                <i class="fa-solid fa-bars" id="menu-icon" onclick="menutoggle()"></i>
+            </div>
+            
+        </div> 
+    <!------------------------------    COMPTE  ----------------------------------->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/blog-2.jpg" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Connexion</span>
+                            <span onclick="register()">S'inscrire</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Nom d'utilisateur" class="input1">
+                            <input type="password" placeholder="Mot de Passe" class="input1">
+                            <button type="submit" class="btn">Connexion</button>
+                            <a href="">Mot de passe Oublie?</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="Nom d'utilisateur" class="input1">
+                            <input type="email" placeholder="" class="input1">
+                            <input type="password" placeholder="Mot de Passe" class="input1">
+                            <input type="password" placeholder="Confirmer votre mot de passe" class="input1">
+                            <button type="submit" class="btn">S'inscrire</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="footer-col-1">
+                        <h3> download our App</h3>
+                        <p> DOWNLOAD APP FOR ANDROID AND IOS MOBILE PHONE</p>
+                    </div>
+
+                    <div class="footer-col-2">
+                        <img src="images/logo/logo.svg">
+                        <p> our por pose is to sustainably make the pleasure and benefits of sport accessible of sport</p>
+                    </div>
+
+                    <div class="footer-col-3">
+                        <h3>userful links</h3>
+                        <ul>
+                            <li>coupons</li>
+                            <li>blogs post</li>
+                            <li>return policy</li>
+                            <li>join Affiliate</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col-4">
+                        <h3>Mode de payement</h3>
+                        <ul>
+                            <li>A la Livraison</li>
+                            <li>Paypal</li>
+                            <li>Visa</li>
+                            <li>MTN Money</li>
+                            <li>Orange money</li>
+                        </ul>
+                    </div>
+            </div>
+            <hr>
+            <p class="copyright">@ copyright 2022</p>
+        </div>
+    </div> 
+    <!------------------------ js for toggle menu ------------------------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+    <!--------------------------- js de 'inscription' --------------------------------->
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+        
+
+            function register(){
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+                
+            }
+
+            function login(){
+                RegForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+            }
+
+    </script>
+</body>
+</html> 
