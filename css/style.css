@@ -366,6 +366,8 @@ input:focus{
 .forme{
     display: flex;
     margin-top: 100px;
+    margin-left: 20%;
+    margin-right: 15%;
 }
 
 
@@ -376,13 +378,20 @@ input:focus{
     }
     .select{
         margin-bottom: 30px;
+        margin-right: 20%;
+        margin-left: 20%;
     }
 }
 
-@media only screen and (max-width:348px){
-    #I1{
-        
+@media only screen and (max-width:784px){
+    .forme{
+        margin-left: 3%;
+        margin-right: 3%;
     }
+    #I1{
+        margin-left: 400px;
+    }
+ 
 }
 
 /* --------------------------- DETAIL DU PRODUITS ----------------------------------*/
