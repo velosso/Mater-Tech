@@ -365,9 +365,14 @@ input:focus{
 }
 .forme{
     display: flex;
-    margin-top: 100px;
     margin-left: 20%;
     margin-right: 15%;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: -30px;
+
 }
 
 
