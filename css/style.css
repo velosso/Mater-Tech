@@ -152,8 +152,9 @@ h4{
     font-size: 14px;
 }
 
-.rating .fa-solid{
+.rating{
     color: #ff523b;
+    font-weight: bold;
 }
 
 .col-4:hover{
